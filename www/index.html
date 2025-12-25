@@ -54,17 +54,20 @@ function getAuthErrorMessage(error) {
 function updateCharacterCount(inputId, counterId, maxLength) {
     const input = $(`#${inputId}`);
     const counter = $(`#${counterId}`);
-
+    
     input.on('input', () => {
         const length = input.val().length;
-        counter.text(`${length}/${maxLength}`);
+        const nokoriLength = maxLength - length;
 
+        counter.text(`${length}/${nokoriLength}`);
+ 
         if (length > maxLength) {
             counter.addClass('error');
         } else {
             counter.removeClass('error');
         }
     });
+    
 }
 
 // 投稿内容のバリデーション
