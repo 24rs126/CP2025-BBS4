@@ -504,6 +504,10 @@ $(function() {
 
     // 投稿一覧表示順序選択
     $('#sortOrder').on('change', loadPosts);
+    
+    $('#nightBtn').on('click', () => {
+    $('body').toggleClass('night');
+    });
 
     // 投稿一覧の初期読み込み
     loadPosts();
@@ -548,7 +552,7 @@ window.addEventListener('unload', () => {
         <div class="user-info logged-in">
             <span>ログイン中：<span id="userEmail"></span></span>
             <button id="logoutButton" class="btn-secondary">ログアウト</button>
-            
+            <button id="nightBtn" class="btn-secondary">🌙</button>
         </div>
 
         <!-- 投稿フォーム（ログイン時表示） -->

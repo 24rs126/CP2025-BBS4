@@ -507,3 +507,29 @@ textarea.form-control {
 .logged-out {
     display: none;
 }
+
+body.night {
+    background: rgb(85, 85, 85);
+    color: #ddd;
+}
+body.night * {
+    color: #fff;
+}
+body.night .post,
+body.night .post-form,
+body.night .auth-container,
+body.night .user-info,
+body.night .modal-content {
+    background: rgb(83, 83, 83);
+    color: #ddd;
+}
+
+body.night input,
+body.night textarea,
+body.night select {
+    background: rgb(83, 83, 83);
+    color: #ddd;
+    border-color: #444;
+}
+
+
