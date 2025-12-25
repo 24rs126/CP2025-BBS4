@@ -67,7 +67,7 @@ function updateCharacterCount(inputId, counterId, maxLength) {
             counter.removeClass('error');
         }
     });
-    
+    input.trigger('input');
 }
 
 // 投稿内容のバリデーション
