@@ -59,7 +59,7 @@ function updateCharacterCount(inputId, counterId, maxLength) {
         const length = input.val().length;
         const nokoriLength = maxLength - length;
 
-        counter.text(`${length}/${nokoriLength}`);
+        counter.text(`${length}/残り${nokoriLength}`);
  
         if (length > maxLength) {
             counter.addClass('error');
