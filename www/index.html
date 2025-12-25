@@ -67,7 +67,7 @@ function updateCharacterCount(inputId, counterId, maxLength) {
             counter.removeClass('error');
         }
     });
-    input.trigger('input');
+    
 }
 
 // 投稿内容のバリデーション
@@ -548,18 +548,22 @@ window.addEventListener('unload', () => {
         <div class="user-info logged-in">
             <span>ログイン中：<span id="userEmail"></span></span>
             <button id="logoutButton" class="btn-secondary">ログアウト</button>
+            
         </div>
 
         <!-- 投稿フォーム（ログイン時表示） -->
-        <div class="post-form logged-in">
+        
+        <div class="post-form logged-in"> 
+           
             <div class="form-group">
                 <label for="contentInput">投稿内容</label>
                 <textarea id="contentInput" class="form-control"
                           placeholder="投稿内容を入力してください"></textarea>
-                <small class="character-count" id="contentCount">0/1000</small>
+                <small class="character-count" id="contentCount">0/残り1000</small>
             </div>
             <div class="button-group">
                 <button id="postButton" class="btn-primary">投稿する</button>
+                
             </div>
         </div>
 
