@@ -512,9 +512,8 @@ body.night {
     background: rgb(85, 85, 85);
     color: #ddd;
 }
-body.night * {
-    color: #fff;
-}
+
+
 body.night .post,
 body.night .post-form,
 body.night .auth-container,
